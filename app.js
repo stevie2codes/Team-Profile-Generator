@@ -1,4 +1,5 @@
 const inquirer = require("inquirer");
+const bootstrap = require('bootstrap');
 const fs = require('fs');
 const html = require("./templates/main.html");
 

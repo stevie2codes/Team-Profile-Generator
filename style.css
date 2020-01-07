@@ -3,4 +3,23 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(29,30,34);
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+  margin-top: 100px;
+  color: rgb(206, 189, 189);
+  background-color: rgb(29,30,34);
+  box-shadow: -6px -6px 26px 0 rgba(53, 51, 51, 0.301),6px 6px 16px 0 rgba(17, 18, 20, 0.8);
+  border: none;
+}
+
+.card ul li{
+    background-color: rgb(29,30,34);
+    border-bottom: 1px solid rgba(206, 189, 189, 0.657);
+}
+
+.card-header{
+    border-bottom: 1px solid rgba(206, 189, 189, 0.685);
 }
