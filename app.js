@@ -1,26 +1,24 @@
 const inquirer = require("inquirer");
-const bootstrap = require('bootstrap');
 const fs = require('fs');
-const html = require("./templates/main.html");
+
 
 function promptUser() {
     return inquirer.prompt([{
         type: "list",
         name: "status",
         choices: ["engineer", "intern", "manager"],
-        message: "What is your job title?"
-    },
-    {
-        type: "input",
-        name: "email",
-        message: "Enter your email"
-    },
-    {
-        type: "input",
-        name: "username",
-        message: "what is your GitHub User Name?"
+        message: "What Type of employee do you want?"
     }
-    ])
-}
+   ])
+   
+};
 
-promptUser();
+async function init () { 
+    const choiceData = await promptUser();
+    const { choices } = choiceData;
+//   console.log(choiceData.status);
+    if(choiceData.status === "engineer"){
+       console.log("successsss!");
+}
+}
+init();
