@@ -1,9 +1,9 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
 const Manager = require("./lib/Manager");
-const BuildTeam = require('./lib/build_team');
+const managerPrompt= require('./lib/build_team');
 
-BuildTeam();
+managerPrompt();
 
 //manager prompt//
 // function promptManager() {
