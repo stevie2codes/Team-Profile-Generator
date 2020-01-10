@@ -1,20 +1,32 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
+const Manager = require("./lib/Manager");
 
-
-function promptUser() {
-    return inquirer.prompt([{
-        type: "list",
+//manager prompt//
+function promptManager() {
+    return inquirer.prompt([
+        {
+        type: "input",
         name: "status",
-        choices: ["engineer", "intern", "manager"],
-        message: "What Type of employee do you want?"
+        message: "What is your name"
+    },
+    {
+        type: "input",
+        name: "status",
+        message: "What is your id?"
+    },
+    {
+        type: "input",
+        name: "status",
+        message: "what is your email"
     }
+
    ])
    
 };
 
 async function init () { 
-    const choiceData = await promptUser();
+    const choiceData = await promptManager();
     const { choices } = choiceData;
 //   console.log(choiceData.status);
     if(choiceData.status === "engineer"){
