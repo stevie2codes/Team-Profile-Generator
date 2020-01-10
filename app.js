@@ -7,17 +7,17 @@ function promptManager() {
     return inquirer.prompt([
         {
         type: "input",
-        name: "status",
+        name: "name",
         message: "What is your name"
     },
     {
         type: "input",
-        name: "status",
+        name: "id",
         message: "What is your id?"
     },
     {
         type: "input",
-        name: "status",
+        name: "email",
         message: "what is your email"
     }
 
