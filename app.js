@@ -1,4 +1,4 @@
-const managerPrompt= require('./lib/build_team');
+const managerPrompt = require('./lib/build_team');
 
 managerPrompt();
 
